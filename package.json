@@ -1,0 +1,25 @@
+{
+  "name": "excalibot",
+  "version": "1.0.0",
+  "description": "A simple bot for interfacing reddit and discord",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"webpack ./entry.js bundle.js  && webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpratt9/redditbot.git"
+  },
+  "author": "excalibur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpratt9/redditbot/issues"
+  },
+  "homepage": "https://github.com/jpratt9/redditbot#readme",
+  "dependencies": {
+    "snoowrap": "^1.14.1"
+  }
+}
+
+https://www.reddit.com/api/v1/authorize?client_id=CLIENT_ID&response_type=TYPE&state=RANDOM_STRING&redirect_uri=URI&duration=DURATION&scope=SCOPE_STRING
