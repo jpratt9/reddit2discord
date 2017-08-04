@@ -6,8 +6,7 @@ const r = new snoowrap({
   clientSecret: 'k5ttkZQ4KKwv-e4MjPZxqSWhEUw',
   refreshToken: '20039964432-srkYB4x7GTJD3dvtuxvDGrDnYZ0'
 });
-r.getSubmission('6rfsto').author.name
-    .then( function(submission) {
-        console.log(submission);
-    });
+const me = r.getUser('excalibur457');
+me.getSubmissions().then(console.log);
 
+//console.log(me);
